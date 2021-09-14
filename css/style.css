@@ -1,0 +1,39 @@
+body {
+  background-color: #fff;
+  color: #212121;
+}
+
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* имейл и телефон rgba(255, 255, 255, 0,6) */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* серый фон #F5F4FA */
+/* синий фон героя и футера #2F303A */
+
+/* Красит часть логотипа в синий цвет */
+.web-logo {
+  color: #2196f3;
+}
+/* Класс убирающий точки перед списком */
+.list {
+  list-style: none;
+}
+/* элементы навигации в хидере студии*/
+.site-nav .link:hover,
+.site-nav .link:active {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+/* фильтры в портфолио*/
+.filter .but:hover,
+.filter .but:active {
+  color: white;
+  background-color: #2196f3;
+}
+.filter .but.current {
+  color: white;
+  background-color: #2196f3;
+}
