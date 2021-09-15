@@ -8,18 +8,32 @@
 
 :root {
   --accent-color: #2196f3;
+  --main-text-color: #212121;
+  --backgr-but-color: #f5f4fa;
 }
 body {
   background-color: #fff;
-  color: #212121;
+  color: var(--main-text-color);
+}
+/* Основной цвет логотипа */
+.logo {
+  color: inherit;
 }
 /* Красит часть логотипа в синий цвет */
 .web-logo {
   color: var(--accent-color);
 }
-/* Класс убирающий точки перед списком */
+/* вторичный цвет текста */
+.section-text {
+  color: #757575;
+}
+/* Убираем точки перед списком */
 .list {
   list-style: none;
+}
+/* Убираем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
 }
 /* элементы навигации в хидере студии*/
 .site-nav .link:hover,
@@ -30,13 +44,13 @@ body {
   color: var(--accent-color);
 }
 .site-nav .link {
-  color: #212121;
+  color: inherit;
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
 }
-/* фильтры в портфолио*/
+/* кнопки фильтров в портфолио*/
 .filter .but:hover,
 .filter .but:focus {
   color: white;
@@ -46,7 +60,14 @@ body {
   color: white;
   background-color: var(--accent-color);
 }
-/* вторичный цвет текста */
-.section-text {
-  color: #757575;
+.but {
+  border-color: transparent;
+}
+.filter .but {
+  background-color: var(--backgr-but-color);
+}
+/* Кнопка героя */
+.hero .but {
+  background-color: var(--accent-color);
+  color: white;
 }
