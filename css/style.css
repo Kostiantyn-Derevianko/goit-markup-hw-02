@@ -1,19 +1,21 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* имейл и телефон в футере rgba(255, 255, 255, 0,6) */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* серый фон #F5F4FA */
+/* темно синий фон героя и футера #2F303A */
+
+:root {
+  --accent-color: #2196f3;
+}
 body {
   background-color: #fff;
   color: #212121;
 }
-
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
-/* имейл и телефон rgba(255, 255, 255, 0,6) */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-/* серый фон #F5F4FA */
-/* синий фон героя и футера #2F303A */
-
 /* Красит часть логотипа в синий цвет */
 .web-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Класс убирающий точки перед списком */
 .list {
@@ -21,19 +23,30 @@ body {
 }
 /* элементы навигации в хидере студии*/
 .site-nav .link:hover,
-.site-nav .link:active {
-  color: #2196f3;
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: #212121;
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
 }
 /* фильтры в портфолио*/
 .filter .but:hover,
-.filter .but:active {
+.filter .but:focus {
   color: white;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .filter .but.current {
   color: white;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
+}
+/* вторичный цвет текста */
+.section-text {
+  color: #757575;
 }
