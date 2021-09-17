@@ -13,13 +13,31 @@
   --backgr-btn-color: #f5f4fa;
 }
 body {
-  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
+  background-color: #ffffff;
 }
 /* Основной цвет логотипа */
-.header-logo,
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
 .footer-logo {
-  color: inherit;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer {
+  background-color: #2f303a;
 }
 /* Красит часть логотипа в синий цвет */
 .web-logo {
@@ -41,6 +59,13 @@ body {
   text-decoration: none;
 }
 /* элементы навигации в хидере студии*/
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #212121;
+}
 .nav-list .link:hover,
 .nav-list .link:focus {
   color: var(--accent-color);
@@ -51,28 +76,59 @@ body {
 .nav-list .link {
   color: inherit;
 }
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
 .contact-list .link:hover,
 .contact-list .link:focus {
   color: var(--accent-color);
 }
-/* кнопки фильтров в портфолио*/
-.filter .btn:hover,
-.filter .btn:focus {
-  color: white;
-  background-color: var(--accent-color);
-}
-.filter .btn.current {
-  color: white;
-  background-color: var(--accent-color);
-}
-.btn {
+/* Кнопки фильтров в портфолио*/
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: var(--backgr-btn-color);
   border-color: transparent;
 }
-.filter .btn {
-  background-color: var(--backgr-btn-color);
+.filter-btn:hover,
+.filter-btn:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+.filter-btn.current {
+  color: white;
+  background-color: var(--accent-color);
 }
 /* Кнопка героя */
-.hero .btn {
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
   background-color: var(--accent-color);
-  color: white;
+  border-color: transparent;
+}
+/*----------- HERO------------- */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero {
+  background-color: #2f303a;
 }
