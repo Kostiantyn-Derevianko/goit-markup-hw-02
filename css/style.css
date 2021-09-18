@@ -2,13 +2,14 @@
 /* вторичный цвет текста #757575 */
 /* имейл и телефон в футере rgba(255, 255, 255, 0,6) */
 /* акцент #2196F3 */
-/* основной белый фон #FFFFFF */
+/* основной белый фон и белый шрифт #FFFFFF */
 /* серый фон #F5F4FA */
 /* темно синий фон героя и футера #2F303A */
 
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
+  --third-text-color: #ffffff;
   --accent-color: #2196f3;
   --backgr-btn-color: #f5f4fa;
 }
@@ -17,34 +18,16 @@ body {
   color: var(--main-text-color);
   background-color: #ffffff;
 }
-/* Основной цвет логотипа */
-.header-logo {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.footer {
-  background-color: #2f303a;
-}
-/* Красит часть логотипа в синий цвет */
-.web-logo {
-  color: var(--accent-color);
+/* основной цвет текста */
+.feature-title,
+.activity-title,
+.team-title,
+.team-title-name,
+.work-title {
+  color: var(--main-text-color);
 }
 /* вторичный цвет текста */
-.contact-text,
+.contact-link,
 .feature-text,
 .team-text,
 .work-text {
@@ -58,67 +41,48 @@ body {
 .link {
   text-decoration: none;
 }
+
+/*-------------- HEADER-------------- */
+/* Основной цвет логотипа */
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* Красит часть логотипа в синий цвет в хидере и футере*/
+.web-logo {
+  color: var(--accent-color);
+}
 /* элементы навигации в хидере студии*/
-.nav-list {
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
-}
-.nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--accent-color);
-}
-.nav-list .link.current {
-  color: var(--accent-color);
-}
-.nav-list .link {
   color: inherit;
 }
-.contact-list {
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
-.contact-list .link:hover,
-.contact-list .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
-/* Кнопки фильтров в портфолио*/
-.filter-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background-color: var(--backgr-btn-color);
-  border-color: transparent;
-}
-.filter-btn:hover,
-.filter-btn:focus {
-  color: white;
-  background-color: var(--accent-color);
-}
-.filter-btn.current {
-  color: white;
-  background-color: var(--accent-color);
-}
-/* Кнопка героя */
-.hero-btn {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: var(--accent-color);
-  border-color: transparent;
-}
+
 /*----------- HERO------------- */
 .hero {
   background-color: #2f303a;
@@ -130,8 +94,22 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--third-text-color);
 }
+/* Кнопка героя */
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
 /*-------НАШИ ОСОБЕННОСТИ------- */
 .feature-title {
   font-weight: bold;
@@ -139,7 +117,6 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .feature-text {
   font-weight: normal;
@@ -155,8 +132,8 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
+
 /*-------НАША КОМАНДА------- */
 .team-title {
   font-weight: bold;
@@ -164,7 +141,6 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-title-name {
   font-weight: 500;
@@ -173,7 +149,6 @@ body {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-text {
   font-weight: normal;
@@ -183,8 +158,58 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: var(--backgr-btn-color);
+  border-color: transparent;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+.filter-btn.current {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+
+/*--------ПРИМЕРЫ РАБОТ ПОРТФОЛИО------ */
+.work-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.work-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 /*----------- FOOTER------------- */
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
 .footer-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -192,5 +217,5 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link.adr {
-  color: #ffffff;
+  color: var(--third-text-color);
 }
