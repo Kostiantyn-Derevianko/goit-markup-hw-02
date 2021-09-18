@@ -146,7 +146,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -155,7 +154,6 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
 }
 
 /*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
