@@ -9,7 +9,7 @@
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
-  --third-text-color: #ffffff;
+  --white-text-color: #ffffff;
   --accent-color: #2196f3;
   --backgr-btn-color: #f5f4fa;
 }
@@ -46,8 +46,7 @@ body {
 /* Основной цвет логотипа */
 .header-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -94,22 +93,23 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--third-text-color);
+  color: var(--white-text-color);
 }
 /* Кнопка героя */
 .hero-btn {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--third-text-color);
+  color: var(--white-text-color);
   background-color: var(--accent-color);
   border-color: transparent;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 /*-------НАШИ ОСОБЕННОСТИ------- */
@@ -165,14 +165,15 @@ body {
   background-color: var(--backgr-btn-color);
   border-color: transparent;
   cursor: pointer;
+  border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--third-text-color);
+  color: var(--white-text-color);
   background-color: var(--accent-color);
 }
 .filter-btn.current {
-  color: var(--third-text-color);
+  color: var(--white-text-color);
   background-color: var(--accent-color);
 }
 
@@ -194,23 +195,21 @@ body {
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--third-text-color);
+  color: var(--white-text-color);
 }
 .footer-link {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link.adr {
-  color: var(--third-text-color);
+  color: var(--white-text-color);
 }
 .footer-link:hover,
 .footer-link:focus {
